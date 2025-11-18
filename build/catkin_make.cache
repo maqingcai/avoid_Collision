@@ -1,2 +1,0 @@
-cgx_arm_control:cgx_description:cgx_driver:cgx_moveit_config:my_avoid
--DCATKIN_DEVEL_PREFIX=/home/ffish/Desktop/my_cgx_dev/devel -DCMAKE_INSTALL_PREFIX=/home/ffish/Desktop/my_cgx_dev/install -G Unix Makefiles

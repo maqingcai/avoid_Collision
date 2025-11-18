@@ -1,8 +1,0 @@
-prefix=/home/ffish/Desktop/my_cgx_dev/install
-
-Name: mymoveit
-Description: Description of mymoveit
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

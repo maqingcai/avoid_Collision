@@ -1,2 +1,0 @@
-set(cgx_driver_MESSAGE_FILES "")
-set(cgx_driver_SERVICE_FILES "srv/CgxDriverService.srv;srv/RobotControl.srv;srv/RobotStatePose.srv;srv/RobotStateSpeed.srv;srv/RobotStateAcceleration.srv;srv/RobotStateCurrent.srv;srv/RobotStop.srv;srv/RobotGetAnalogIOState.srv;srv/RobotGetDigitalIOState.srv;srv/RobotSetAnalogIOState.srv;srv/RobotSetDigitalIOState.srv;srv/RobotGetAllDAInput.srv;srv/RobotGetAllDAOutput.srv;srv/RobotMoveCircle.srv")
