@@ -1,0 +1,338 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"generate_messages",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"build/cgx_driver/cmake/cgx_driver-genmsg.cmake",
+			"/opt/ros/noetic/share/genmsg/cmake/genmsg-extras.cmake",
+			"cgx_driver/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 90,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 307,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 600,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 633,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 617,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 629,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 625,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 822,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 631,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 607,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 609,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 611,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 621,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 613,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 615,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 619,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 623,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 627,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotMoveCircle::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotStateCurrent::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotGetAllDAInput::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotSetAnalogIOState::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "std_msgs_generate_messages_nodejs::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotGetAllDAOutput::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "_cgx_driver_generate_messages_check_deps_CgxDriverService::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotControl::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotStatePose::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotGetAnalogIOState::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotStateSpeed::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotStateAcceleration::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotStop::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotGetDigitalIOState::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotSetDigitalIOState::@bcbb1a41cb9124cb0b95"
+		}
+	],
+	"id" : "cgx_driver_generate_messages_nodejs::@bcbb1a41cb9124cb0b95",
+	"name" : "cgx_driver_generate_messages_nodejs",
+	"paths" : 
+	{
+		"build" : "cgx_driver",
+		"source" : "cgx_driver"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/cgx_driver/CMakeFiles/cgx_driver_generate_messages_nodejs",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/cgx_driver/CMakeFiles/cgx_driver_generate_messages_nodejs.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/cgx_driver/srv/CgxDriverService.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/cgx_driver/srv/RobotControl.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/cgx_driver/srv/RobotStatePose.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/cgx_driver/srv/RobotStateSpeed.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/cgx_driver/srv/RobotStateAcceleration.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/cgx_driver/srv/RobotStateCurrent.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/cgx_driver/srv/RobotStop.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/cgx_driver/srv/RobotGetAnalogIOState.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/cgx_driver/srv/RobotGetDigitalIOState.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/cgx_driver/srv/RobotSetAnalogIOState.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/cgx_driver/srv/RobotSetDigitalIOState.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/cgx_driver/srv/RobotGetAllDAInput.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/cgx_driver/srv/RobotGetAllDAOutput.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/cgx_driver/srv/RobotMoveCircle.js.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

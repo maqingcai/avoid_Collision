@@ -1,0 +1,242 @@
+<?xml version="1.0" ?>
+<robot name="C6">
+    <link name="C6_base">
+        <visual>
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/visual/base.dae" />
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/collision/base.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="122" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+        </inertial>
+    </link>
+    <link name="C6_link1">
+        <visual>
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/visual/link1.dae" />
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/collision/link1.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="18" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+        </inertial>
+    </link>
+    <joint name="C6_joint1" type="revolute">
+        <origin xyz="0 0 0.1607" rpy="0 0 0" />
+        <parent link="C6_base" />
+        <child link="C6_link1" />
+        <axis xyz="0 0 1" />
+        <limit effort="87" lower="-6.2832" upper="6.2832" velocity="3.6652" />
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <link name="C6_link2">
+        <visual>
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/visual/link2.dae" />
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/collision/link2.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="14" />
+            <origin xyz="-0.1448 0 -0.2" rpy="0 0 0" />
+            <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+        </inertial>
+    </link>
+    <joint name="C6_joint2" type="revolute">
+        <origin xyz="0 0 0" rpy="1.57079632679 -1.57079632679 0" />
+        <parent link="C6_link1" />
+        <child link="C6_link2" />
+        <axis xyz="0 0 1" />
+        <limit effort="87" lower="-6.2832" upper="6.2832" velocity="3.6652" />
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <link name="C6_link3">
+        <visual>
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/visual/link3.dae" />
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/collision/link3.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="2.5" />
+            <origin xyz="-0.1 0 -0.1" rpy="0 0 0" />
+            <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+        </inertial>
+    </link>
+    <joint name="C6_joint3" type="revolute">
+        <origin xyz="0.425 0 0" rpy="0 0 0" />
+        <parent link="C6_link2" />
+        <child link="C6_link3" />
+        <axis xyz="0 0 1" />
+        <limit effort="87" lower="-2.8798" upper="2.8798" velocity="3.6652" />
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <link name="C6_link4">
+        <visual>
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/visual/link4.dae" />
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/collision/link4.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="0.51" />
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+        </inertial>
+    </link>
+    <joint name="C6_joint4" type="revolute">
+        <origin xyz="0.393 0 0.1133" rpy="0 0 -1.57079632679" />
+        <parent link="C6_link3" />
+        <child link="C6_link4" />
+        <axis xyz="0 0 1" />
+        <limit effort="87" lower="-6.2832" upper="6.2832" velocity="6.2832" />
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <link name="C6_link5">
+        <visual>
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/visual/link5.dae" />
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/collision/link5.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="0.01" />
+            <origin xyz="0 0 -0.1" rpy="0 0 0" />
+            <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+        </inertial>
+    </link>
+    <joint name="C6_joint5" type="revolute">
+        <origin xyz="0 0.099 0" rpy="-1.57079632679 0 0 " />
+        <parent link="C6_link4" />
+        <child link="C6_link5" />
+        <axis xyz="0 0 1" />
+        <limit effort="87" lower="-6.2832" upper="6.2832" velocity="6.2832" />
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <link name="C6_link6">
+        <visual>
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/visual/link6.dae" />
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/collision/link6.stl" />
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="0.001" />
+            <origin xyz="-0.08 0 0" rpy="0 0 0" />
+            <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+        </inertial>
+    </link>
+    <joint name="C6_joint6" type="revolute">
+        <origin xyz="0 -0.0936 0" rpy="1.57079632679 0 0 " />
+        <parent link="C6_link5" />
+        <child link="C6_link6" />
+        <axis xyz="0 0 1" />
+        <limit effort="87" lower="-6.2832" upper="6.2832" velocity="6.2832" />
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <!-- <gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+      <parameters>/home/cgx/cgx_ws/src/cgx_description/config/g6_controllers.yaml</parameters>
+      <plugin_config>gazebo_hardware_plugins.xml</plugin_config>
+    </plugin>
+  </gazebo> -->
+    <transmission name="trans_C6_joint1">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="C6_joint1">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="C6_joint1_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_C6_joint2">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="C6_joint2">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="C6_joint2_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_C6_joint3">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="C6_joint3">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="C6_joint3_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_C6_joint4">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="C6_joint4">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="C6_joint4_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_C6_joint5">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="C6_joint5">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="C6_joint5_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_C6_joint6">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="C6_joint6">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="C6_joint6_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>
+

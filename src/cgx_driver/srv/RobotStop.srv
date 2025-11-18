@@ -1,0 +1,5 @@
+# RobotStop.srv
+string moveType 
+---
+int16 ret
+string message

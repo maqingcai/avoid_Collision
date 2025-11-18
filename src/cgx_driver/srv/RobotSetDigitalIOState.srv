@@ -1,0 +1,6 @@
+# RobotSetDigitalIOState.srv
+int32 index
+bool value 
+---
+int32 ret        # 返回状态码
+string message   # 返回信息

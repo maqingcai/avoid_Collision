@@ -1,0 +1,8 @@
+prefix=/home/ffish/Desktop/cgx_dev/src/build/devel
+
+Name: cgx_description
+Description: Description of cgx_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

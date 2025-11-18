@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: cgx_description
+    relative_path: urdf/C6.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/C6.srdf
+  CONFIG:
+    author_name: rxm
+    author_email: ruanxiaoman@cgxi.com
+    generated_timestamp: 1746702953

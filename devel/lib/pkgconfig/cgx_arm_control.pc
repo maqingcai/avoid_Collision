@@ -1,0 +1,8 @@
+prefix=/home/ffish/Desktop/my_cgx_dev/devel
+
+Name: cgx_arm_control
+Description: Description of cgx_arm_control
+Version: 0.0.0
+Cflags: -I/home/ffish/Desktop/my_cgx_dev/src/cgx_arm_control/include
+Libs: -L${prefix}/lib -lcgx_arm_control
+Requires: roscpp rospy std_msgs message_runtime

@@ -1,0 +1,9 @@
+# RobotGetAllDAInput.srv
+---
+bool[8] controllerDI
+bool[8] controllerCI
+float32[3] controllerAI
+bool[2] toolDI
+float32[2] toolAI
+int16 ret
+string message

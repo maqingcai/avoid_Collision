@@ -1,0 +1,17 @@
+# RobotMoveCircle.srv
+float32[] mid_pose
+float32[] mid_jointpos
+float32[] mid_speed
+float32[] mid_acc
+string mid_coordinate_type
+string mid_point_trans_type
+float32[] end_pose
+float32[] end_jointpos
+float32[] end_speed
+float32[] end_acc
+string end_coordinate_type
+string end_point_trans_type
+int16 end_is_block
+---
+int16 ret
+string message

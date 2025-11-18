@@ -1,0 +1,33 @@
+# C6_controllers.yaml
+
+# Controller manager configuration
+controller_manager:
+  ros:
+    publish_rate: 50  # Hz
+
+# Joint state controller configuration
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 50
+
+# Arm controller configuration
+test_group_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - C6_joint1
+    - C6_joint2
+    - C6_joint3
+    - C6_joint4
+    - C6_joint5
+    - C6_joint6
+  constraints:
+    goal_time: 0.6
+    stopped_velocity_tolerance: 0.05
+    C6_joint1: {trajectory: 0.1, goal: 0.1}
+    C6_joint2: {trajectory: 0.1, goal: 0.1}
+    C6_joint3: {trajectory: 0.1, goal: 0.1}
+    C6_joint4: {trajectory: 0.1, goal: 0.1}
+    C6_joint5: {trajectory: 0.1, goal: 0.1}
+    C6_joint6: {trajectory: 0.1, goal: 0.1}
+  state_publish_rate: 25
+  action_monitor_rate: 10

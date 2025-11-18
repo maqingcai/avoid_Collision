@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="move_group_interface" pkg="my_avoid" type="move_group_interface" respawn="false" output="screen">
+  </node>
+
+</launch>

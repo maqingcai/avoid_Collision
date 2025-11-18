@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="C6">
+    <link name="C6_base">
+        <inertial>
+            <origin xyz="0.000136 0.001601 0.018986" rpy="0 0 0" />
+            <mass value="2.592" />
+            <inertia ixx="0.008524" ixy="-0.000001" ixz="-0.000005" iyy="0.007934" iyz="-0.000081" izz="0.015304" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/C6_base.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.89412 0.89412 0.89412 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/C6_base.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="C6_link1">
+        <inertial>
+            <origin xyz="-0.000004 0.005112 -0.026275" rpy="0 0 0" />
+            <mass value="10.180139" />
+            <inertia ixx="0.043326" ixy="0.000003" ixz="0.000003" iyy="0.042233" iyz="-0.001767" izz="0.029902" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/C6_link1.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="1 1 1 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/C6_link1.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="C6_joint1" type="revolute">
+        <origin xyz="0 0 0.1675" rpy="0 0 0" />
+        <parent link="C6_base" />
+        <child link="C6_link1" />
+        <axis xyz="0 0 1" />
+        <limit lower="-6.2832" upper="6.2832" effort="175" velocity="3.1416" />
+    </joint>
+    <link name="C6_link2">
+        <inertial>
+            <origin xyz="0.231117 -0.000013 -0.022852" rpy="0 0 0" />
+            <mass value="18.096361" />
+            <inertia ixx="0.064904" ixy="0.00003" ixz="-0.033711" iyy="1.524623" iyz="0.000015" izz="1.505664" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/C6_link2.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="1 1 1 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/C6_link2.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="C6_joint2" type="revolute">
+        <origin xyz="0 0 0" rpy="1.5708 -1.5708 0" />
+        <parent link="C6_link1" />
+        <child link="C6_link2" />
+        <axis xyz="0 0 1" />
+        <limit lower="-6.2832" upper="6.2832" effort="175" velocity="3.1416" />
+    </joint>
+    <link name="C6_link3">
+        <inertial>
+            <origin xyz="0.41956 -0.000019 0.118053" rpy="0 0 0" />
+            <mass value="4.448092" />
+            <inertia ixx="0.006799" ixy="0.000016" ixz="0.004004" iyy="0.246194" iyz="0.000005" izz="0.24479" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/C6_link3.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.89412 0.89412 0.89412 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/C6_link3.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="C6_joint3" type="revolute">
+        <origin xyz="0.425 0 0" rpy="0 0 0" />
+        <parent link="C6_link2" />
+        <child link="C6_link3" />
+        <axis xyz="0 0 1" />
+        <limit lower="-2.8798" upper="2.8798" effort="175" velocity="3.1416" />
+    </joint>
+    <link name="C6_link4">
+        <inertial>
+            <origin xyz="0.000047 0.009773 -0.005726" rpy="0 0 0" />
+            <mass value="1.79166" />
+            <inertia ixx="0.002457" ixy="0.000004" ixz="0.000001" iyy="0.00159" iyz="-0.000123" izz="0.002183" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/C6_link4.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.75294 0.75294 0.75294 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/C6_link4.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="C6_joint4" type="revolute">
+        <origin xyz="0.393 0 0.1203" rpy="0 0 -1.5708" />
+        <parent link="C6_link3" />
+        <child link="C6_link4" />
+        <axis xyz="0 0 1" />
+        <limit lower="-6.2832" upper="6.2832" effort="30" velocity="3.1416" />
+    </joint>
+    <link name="C6_link5">
+        <inertial>
+            <origin xyz="-0.000038 -0.011278 -0.001539" rpy="0 0 0" />
+            <mass value="1.628022" />
+            <inertia ixx="0.001951" ixy="0.000003" ixz="-0.000001" iyy="0.001154" iyz="0.000042" izz="0.001931" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/C6_link5.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="1 1 1 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/C6_link5.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="C6_joint5" type="revolute">
+        <origin xyz="0 0.106 0" rpy="-1.5708 0 0" />
+        <parent link="C6_link4" />
+        <child link="C6_link5" />
+        <axis xyz="0 0 1" />
+        <limit lower="-6.2832" upper="6.2832" effort="30" velocity="3.1416" />
+    </joint>
+    <link name="C6_link6">
+        <inertial>
+            <origin xyz="0.000022 0.0006 -0.017081" rpy="0 0 0" />
+            <mass value="0.1978" />
+            <inertia ixx="0.000118" ixy="0" ixz="0" iyy="0.000112" iyz="0.000001" izz="0.000184" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/C6_link6.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.85098 0.85098 0.85098 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://cgx_description/meshes/C6_link6.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="C6_joint6" type="revolute">
+        <origin xyz="0 -0.1026 0" rpy="1.5708 0 0" />
+        <parent link="C6_link5" />
+        <child link="C6_link6" />
+        <axis xyz="0 0 1" />
+        <limit lower="-6.2832" upper="6.2832" effort="30" velocity="3.1416" />
+    </joint>
+
+
+    <link name="world" />
+
+    <joint name="world_joint" type="fixed">
+        <parent link="world" />
+        <child link = "C6_base" />
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+    </joint>
+
+
+    <transmission name="trans_C6_joint1">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="C6_joint1">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="C6_joint1_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_C6_joint2">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="C6_joint2">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="C6_joint2_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_C6_joint3">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="C6_joint3">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="C6_joint3_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_C6_joint4">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="C6_joint4">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="C6_joint4_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_C6_joint5">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="C6_joint5">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="C6_joint5_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+    <transmission name="trans_C6_joint6">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="C6_joint6">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="C6_joint6_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
+
+
+
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>
+

@@ -1,0 +1,6 @@
+# RobotGetAnalogIOState.srv
+int32 index
+---
+float64 value 
+int32 ret        # 返回状态码
+string message   # 返回信息

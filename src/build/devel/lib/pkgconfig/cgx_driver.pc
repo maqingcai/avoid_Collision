@@ -1,0 +1,8 @@
+prefix=/home/ffish/Desktop/cgx_dev/src/build/devel
+
+Name: cgx_driver
+Description: Description of cgx_driver
+Version: 0.0.0
+Cflags: -I/home/ffish/Desktop/cgx_dev/src/build/devel/include -I/home/ffish/Desktop/cgx_dev/src/cgx_driver/include
+Libs: -L${prefix}/lib -lcgx_driver
+Requires: roscpp std_msgs message_runtime

@@ -1,0 +1,5 @@
+# RobotStateSpeed.srv
+---
+float64[6] speed  
+int32 ret        
+string message   

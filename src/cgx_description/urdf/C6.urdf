@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="C6">
+  <link
+    name="C6_base">
+    <inertial>
+      <origin
+        xyz="7.0524E-08 0.10915 0.032913"
+        rpy="0 0 0" />
+      <mass
+        value="0.528137" />
+      <inertia
+        ixx="2.9705E-05"
+        ixy="1.8392E-10"
+        ixz="-7.7789E-11"
+        iyy="8.5317E-06"
+        iyz="-1.2551E-06"
+        izz="3.6942E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cgx_description/meshes/C6_base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89412 0.89412 0.89412 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cgx_description/meshes/C6_base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="C6_link1">
+    <inertial>
+      <origin
+        xyz="-3.6466E-06 -0.007899 0.00034542"
+        rpy="0 0 0" />
+      <mass
+        value="1.7717" />
+      <inertia
+        ixx="0.003616"
+        ixy="-1.6043E-08"
+        ixz="-6.9551E-09"
+        iyy="0.0032857"
+        iyz="0.0003126"
+        izz="0.0034603" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cgx_description/meshes/C6_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cgx_description/meshes/C6_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C6_joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.1675"
+      rpy="0 0 0" />
+    <parent
+      link="C6_base" />
+    <child
+      link="C6_link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="175"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="C6_link2">
+    <inertial>
+      <origin
+        xyz="0.21222 -1.8057E-07 0.14502"
+        rpy="0 0 0" />
+      <mass
+        value="5.5901" />
+      <inertia
+        ixx="0.0089955"
+        ixy="2.7703E-08"
+        ixz="2.3867E-11"
+        iyy="0.024333"
+        iyz="7.3388E-09"
+        izz="0.024022" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cgx_description/meshes/C6_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cgx_description/meshes/C6_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C6_joint2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="C6_link1" />
+    <child
+      link="C6_link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="175"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="C6_link3">
+    <inertial>
+      <origin
+        xyz="0.19597 -1.5111E-06 0.018242"
+        rpy="0 0 0" />
+      <mass
+        value="2.5895" />
+      <inertia
+        ixx="0.0022577"
+        ixy="-1.2914E-07"
+        ixz="8.2647E-05"
+        iyy="0.011067"
+        iyz="1.6744E-07"
+        izz="0.011146" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cgx_description/meshes/C6_link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89412 0.89412 0.89412 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cgx_description/meshes/C6_link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C6_joint3"
+    type="revolute">
+    <origin
+      xyz="0.425 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="C6_link2" />
+    <child
+      link="C6_link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.8798"
+      upper="2.8798"
+      effort="175"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="C6_link4">
+    <inertial>
+      <origin
+        xyz="-7.4353E-06 7.4889E-05 -0.0055656"
+        rpy="0 0 0" />
+      <mass
+        value="0.58904" />
+      <inertia
+        ixx="0.00056406"
+        ixy="1.7352E-07"
+        ixz="-1.4067E-07"
+        iyy="0.00051324"
+        iyz="-5.9225E-05"
+        izz="0.00050628" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cgx_description/meshes/C6_link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cgx_description/meshes/C6_link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C6_joint4"
+    type="revolute">
+    <origin
+      xyz="0.393 0 0.1203"
+      rpy="0 0 -1.5708" />
+    <parent
+      link="C6_link3" />
+    <child
+      link="C6_link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="30"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="C6_link5">
+    <inertial>
+      <origin
+        xyz="7.8193E-06 -7.4901E-05 -0.0055654"
+        rpy="0 0 0" />
+      <mass
+        value="0.58905" />
+      <inertia
+        ixx="0.00056407"
+        ixy="1.6981E-07"
+        ixz="1.3089E-07"
+        iyy="0.00051326"
+        iyz="5.9221E-05"
+        izz="0.0005063" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cgx_description/meshes/C6_link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cgx_description/meshes/C6_link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C6_joint5"
+    type="revolute">
+    <origin
+      xyz="0 0.106 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="C6_link4" />
+    <child
+      link="C6_link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="30"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="C6_link6">
+    <inertial>
+      <origin
+        xyz="-7.4879E-08 1.908E-06 -0.024928"
+        rpy="0 0 0" />
+      <mass
+        value="0.2059" />
+      <inertia
+        ixx="8.3443E-05"
+        ixy="-6.607E-11"
+        ixz="1.8798E-10"
+        iyy="8.4686E-05"
+        iyz="-9.4606E-09"
+        izz="0.00014583" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cgx_description/meshes/C6_link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.85098 0.85098 0.85098 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cgx_description/meshes/C6_link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="C6_joint6"
+    type="revolute">
+    <origin
+      xyz="0 -0.1026 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="C6_link5" />
+    <child
+      link="C6_link6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2832"
+      upper="6.2832"
+      effort="30"
+      velocity="3.1416" />
+  </joint>
+</robot>

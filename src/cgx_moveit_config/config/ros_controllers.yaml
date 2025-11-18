@@ -1,0 +1,40 @@
+test_group_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - C6_joint1
+    - C6_joint2
+    - C6_joint3
+    - C6_joint4
+    - C6_joint5
+    - C6_joint6
+  gains:
+    C6_joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    C6_joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    C6_joint3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    C6_joint4:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    C6_joint5:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    C6_joint6:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

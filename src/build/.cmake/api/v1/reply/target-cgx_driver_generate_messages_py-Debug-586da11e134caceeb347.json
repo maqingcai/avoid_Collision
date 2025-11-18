@@ -1,0 +1,345 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"generate_messages",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"build/cgx_driver/cmake/cgx_driver-genmsg.cmake",
+			"/opt/ros/noetic/share/genmsg/cmake/genmsg-extras.cmake",
+			"cgx_driver/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 90,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 307,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 737,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 770,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 754,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 766,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 762,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 834,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 768,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 744,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 746,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 748,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 758,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 750,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 752,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 756,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 760,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 764,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotMoveCircle::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotStateCurrent::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotGetAllDAInput::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotSetAnalogIOState::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "std_msgs_generate_messages_py::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotGetAllDAOutput::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "_cgx_driver_generate_messages_check_deps_CgxDriverService::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotControl::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotStatePose::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotGetAnalogIOState::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotStateSpeed::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotStateAcceleration::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotStop::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotGetDigitalIOState::@bcbb1a41cb9124cb0b95"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "_cgx_driver_generate_messages_check_deps_RobotSetDigitalIOState::@bcbb1a41cb9124cb0b95"
+		}
+	],
+	"id" : "cgx_driver_generate_messages_py::@bcbb1a41cb9124cb0b95",
+	"name" : "cgx_driver_generate_messages_py",
+	"paths" : 
+	{
+		"build" : "cgx_driver",
+		"source" : "cgx_driver"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/cgx_driver/CMakeFiles/cgx_driver_generate_messages_py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/cgx_driver/CMakeFiles/cgx_driver_generate_messages_py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/cgx_driver/srv/_CgxDriverService.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/cgx_driver/srv/_RobotControl.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/cgx_driver/srv/_RobotStatePose.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/cgx_driver/srv/_RobotStateSpeed.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/cgx_driver/srv/_RobotStateAcceleration.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/cgx_driver/srv/_RobotStateCurrent.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/cgx_driver/srv/_RobotStop.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/cgx_driver/srv/_RobotGetAnalogIOState.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/cgx_driver/srv/_RobotGetDigitalIOState.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/cgx_driver/srv/_RobotSetAnalogIOState.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/cgx_driver/srv/_RobotSetDigitalIOState.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/cgx_driver/srv/_RobotGetAllDAInput.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/cgx_driver/srv/_RobotGetAllDAOutput.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/cgx_driver/srv/_RobotMoveCircle.py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/lib/python3/dist-packages/cgx_driver/srv/__init__.py.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

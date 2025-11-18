@@ -1,0 +1,8 @@
+# RobotGetAllDAOutput.srv
+---
+bool[8] controllerDO
+bool[8] controllerCO
+float32[1] controllerAO
+bool[2] toolDO
+int16 ret
+string message

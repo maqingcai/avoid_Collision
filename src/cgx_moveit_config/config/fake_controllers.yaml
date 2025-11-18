@@ -1,0 +1,13 @@
+controller_list:
+  - name: fake_test_group_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - C6_joint1
+      - C6_joint2
+      - C6_joint3
+      - C6_joint4
+      - C6_joint5
+      - C6_joint6
+initial:  # Define initial robot poses per group
+  - group: test_group
+    pose: home

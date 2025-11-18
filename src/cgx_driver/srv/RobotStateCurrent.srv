@@ -1,0 +1,5 @@
+# RobotStateCurrent.srv
+---
+float64[6] current  
+int32 ret        # 返回状态码
+string message   # 返回信息

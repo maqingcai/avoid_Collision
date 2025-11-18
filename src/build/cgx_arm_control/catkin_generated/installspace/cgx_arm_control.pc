@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: cgx_arm_control
+Description: Description of cgx_arm_control
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lcgx_arm_control
+Requires: roscpp rospy std_msgs message_runtime

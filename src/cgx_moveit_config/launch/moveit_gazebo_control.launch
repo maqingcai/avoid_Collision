@@ -1,0 +1,71 @@
+<launch>
+  <!-- 通用参数 -->
+  <arg name="pipeline" default="ompl" />
+  <arg name="db" default="false" />
+  <arg name="db_path" default="$(find cgx_moveit_config)/default_warehouse_mongo_db" />
+  <arg name="debug" default="false" />
+  <arg name="use_gui" default="false" />
+  <arg name="use_rviz" default="true" />
+  
+  <!-- Gazebo专用参数 -->
+  <arg name="load_robot_description" default="false"/> <!-- Gazebo已经加载了模型 -->
+  <arg name="moveit_controller_manager" default="ros_control"/> <!-- 使用ros_control接口 -->
+  <arg name="fake_execution_type" default="interpolate" />
+
+  <!-- 1. 启动Gazebo仿真环境 -->
+  <!-- 加载机器人模型到参数服务器 -->
+  <param name="robot_description" textfile="$(find cgx_description)/urdf/gazebo_C6.urdf" />
+  
+  <!-- 启动Gazebo -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <!-- 在Gazebo中生成机器人模型 -->
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" 
+        args="-param robot_description -urdf -model C6 -z 0" 
+        output="screen" />
+
+  <!-- 2. 加载并启动控制器 -->
+  <!-- 加载控制器配置 -->
+  <rosparam file="$(find cgx_description)/config/controllers.yaml" command="load"/>
+  <!-- 启动控制器管理器 -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner" 
+        args="test_group_controller joint_state_controller" 
+        output="screen" respawn="false" />
+
+  <!-- 3. 机器人状态发布 -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" 
+        respawn="true" output="screen" />
+
+  <!-- 4. MoveIt配置 -->
+  <!-- 注意：这里不再加载simple_moveit_controllers.yaml，因为Gazebo有自己的控制器配置 -->
+  
+  <!-- 运行主MoveIt可执行文件 -->
+  <include file="$(dirname)/move_group.launch">
+    <arg name="allow_trajectory_execution" value="true"/>
+    <arg name="moveit_controller_manager" value="$(arg moveit_controller_manager)"/>
+    <arg name="fake_execution_type" value="$(arg fake_execution_type)"/>
+    <arg name="info" value="true"/>
+    <arg name="debug" value="$(arg debug)"/>
+    <arg name="pipeline" value="$(arg pipeline)"/>
+    <arg name="load_robot_description" value="$(arg load_robot_description)"/>
+  </include>
+
+  <!-- 5. 可视化 -->
+  <!-- 运行Rviz并加载默认配置 -->
+  <include file="$(dirname)/moveit_rviz.launch" if="$(arg use_rviz)">
+    <arg name="rviz_config" value="$(dirname)/moveit.rviz"/>
+    <arg name="debug" value="$(arg debug)"/>
+  </include>
+
+  <!-- 6. 可选的数据库支持 -->
+  <include file="$(dirname)/default_warehouse_db.launch" if="$(arg db)">
+    <arg name="moveit_warehouse_database_path" value="$(arg db_path)"/>
+  </include>
+
+</launch>

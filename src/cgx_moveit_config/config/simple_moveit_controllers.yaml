@@ -1,0 +1,12 @@
+controller_list:
+  - name: test_group_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - C6_joint1
+      - C6_joint2
+      - C6_joint3
+      - C6_joint4
+      - C6_joint5
+      - C6_joint6
